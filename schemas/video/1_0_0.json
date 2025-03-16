@@ -3,30 +3,61 @@
     "title" : "video",
     "description" : "the",
     "data" : {
-        "required" : ["page_name","page_section","page_type"],
+        "required" : ["player_state","video_data"],
         "properties" : {
             "schema_version" : {
+                "type" : "string",
+                "description" : " This is the schema version for this schema",
+                "minlength" : 8,
+                "pattern" : "^[0-9]{2,2}+_+[0-9]{2,2}+_+[0-9]{2,2}$"
+            },
+            "player_state" : {
+                "type" : "string",
+                "description" : "This player event at time of trigger",
+                "minlength": 5,
+                "eunum" : [
+                    "playing",
+                    "complete",
+                    "stop",
+                    "abandon",
+                    "paused",
+                    "display"
+                ]
 
             },
-            "page_name" : {
-
-            },
-            "page_section" : {
-
-            },
-            "page_type" : {
-
-            }
-        },
-        "allOf" : [
-            {
-                "if" : {
-                    "properties" : {"page_section" : {"const" : "puzzles"}}
-                },
-                "then" : {
-                    "properties" : {"page_name" : {"pattern" : "^(puzzles page)+($|:[a-z|A-Z|0-9]{3,})+.*(?<!:)$"}}
+            "vidoe_data" : {
+                "type" : "array",
+                "items" : {
+                    "type" : "object",
+                    "required" : ["media_name"],
+                    "dependent_required" : {
+                        "is_active" : ["player_time","video_duration"]
+                    },
+                    "additionalItems" : false,
+                    "properties" : {
+                        "media_name" : {
+                            "type" : "string",
+                            "description" : "this is the name of the video",
+                            "minlength" : 5
+                        },
+                        "is_active" : {
+                            "type" : ["boolean", "null"],
+                            "description" : "True if this play, complete, pause, stop or abandon"
+                        },
+                        "player_time" : {
+                            "type" : ["number","null"],
+                            "description" : "player time in seconds at time of event",
+                            "minimum" : 1
+                        },
+                        "video_duration" : {
+                            "type" : ["number","null"],
+                            "description" : "Video or media total durations in sec",
+                            "minimum" : 10
+                        }
+                    }
                 }
+
             }
-        ]
+        }
     }
 }
