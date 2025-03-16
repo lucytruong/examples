@@ -1,0 +1,32 @@
+{
+    "schema" : "https://json-schema.org/draft/2020-12/schema",
+    "title" : "video",
+    "description" : "the",
+    "data" : {
+        "required" : ["page_name","page_section","page_type"],
+        "properties" : {
+            "schema_version" : {
+
+            },
+            "page_name" : {
+
+            },
+            "page_section" : {
+
+            },
+            "page_type" : {
+
+            }
+        },
+        "allOf" : [
+            {
+                "if" : {
+                    "properties" : {"page_section" : {"const" : "puzzles"}}
+                },
+                "then" : {
+                    "properties" : {"page_name" : {"pattern" : "^(puzzles page)+($|:[a-z|A-Z|0-9]{3,})+.*(?<!:)$"}}
+                }
+            }
+        ]
+    }
+}
