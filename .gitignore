@@ -1,3 +1,5 @@
 # ignore files
 tests.py,
-hello.py
+hello.py,
+requirements.txt
+personal.js
