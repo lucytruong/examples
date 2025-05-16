@@ -13,7 +13,7 @@
             },
             "player_state" : {
                 "type" : "string",
-                "description" : "This player event at time of trigger",
+                "description" : "This player state at time of trigger",
                 "minlength": 5,
                 "eunum" : [
                     "playing",
