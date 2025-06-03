@@ -8,6 +8,8 @@ Here you will find the events the business would like to capture and a breakdown
 
 
 ### Usesul links
-1. Matomo channel grouping
-2. mtm or utm?
-    a. [mtm takes priority]:(https://matomo.org/faq/reports/how-to-build-campaign-tracking-urls/)
+* Matomo channel grouping
+* mtm or utm?
+    * [mtm takes priority](https://matomo.org/faq/reports/how-to-build-campaign-tracking-urls/)
+    * <a href="https://matomo.org/faq/reports/how-to-build-campaign-tracking-urls/">mtm takes priority</a>
+    * [Azure DDOS Protection Standard](https://learn.microsoft.com/en-us/azure/virtual-network/ddos-protection-overview)
