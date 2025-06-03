@@ -20,8 +20,8 @@ Here you will find the events the business would like to capture and a breakdown
  2. ***description*** When a new page load including SPA pages
  3. ***trigger*** On page load or history change for SPA
  4. ***required_dimension 
-     1. 'page_url': <pageURL>
-     2. 'page_title':<full page title>
+     1. 'page_url': Full page URL
+     2. 'page_title': Full page title
      3. marketihng_information
     
 
@@ -29,7 +29,7 @@ Here you will find the events the business would like to capture and a breakdown
  2. ***description*** When generic links are clicked
  3. ***trigger*** OnClick of link of any type
  4. ***required_dimension 
-     1. 'link_name': <link Name>
-     2. 'link_position':<link Index>
-     3. 'feature_name': <featureName>
+     1. 'link_name': link Name
+     2. 'link_position': link Index
+     3. 'feature_name': feature name
     
