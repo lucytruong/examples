@@ -3,6 +3,8 @@ const json2md = require('json2md');
 const docs = require('../src/dictionary.json');
 var eventlists = '';
 const eventstracked = docs.eventtrack;
+
+const fdate = new Date().getDate()+'-'+new Date().getMonth()+'-'+new Date().getFullYear();
 console.log(docs.eventtrack);
 
 const generateReqDims = (dims) => {
@@ -36,8 +38,6 @@ function buildlists(item) {
     ])
 }
 
-//schemas/page/1_0_0.json
-
 const config = {
     docPath: '../../matomo/tracking/latest/docs',
     intro: '../src/intro.md',
@@ -51,7 +51,7 @@ const jsonlist = (json2md({h2: "here is a list of jsons"}));
 const createLatestEventDictionary = () => {
 //const input = docs;
 mkdir(config.docPath, { recursive: true }, (err) => {
-    const heading = 'Last upated: 3rd June 2025';//+new Date().toIsoString().tosubstring(0,10);
+    const heading = 'Last upated: '+fdate;
 const intro = readFileSync(config.intro, 'utf8');
 
 try {
