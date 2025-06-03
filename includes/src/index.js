@@ -23,16 +23,19 @@ function buildlists(item) {
         require_event_dim = generateReqDims(item.Required_Dimensions);
     }
     eventlists += json2md([
+        {h2: 'Tracked event: ' + item.event_name},
+        {p: 'These are the tracking requirements for '+item.event_name},
         {
             ol: [
                 '***Name*** ' + item.name,
                 '***description*** ' + item.description,
                 '***trigger*** ' + item.trigger,
-                '***required_dimension '+ require_event_dim
+                '***required_dimension***'+ require_event_dim
             ]
         }
     ])
 }
+
 
 
 const config = {
@@ -40,6 +43,7 @@ const config = {
     intro: '../src/intro.md',
 };
 
+//const jsonlink = {json2md.link{title:'page', source: '../../schemas/page/1_0_0.json'}};
 
 
 const createLatestEventDictionary = () => {
