@@ -6,7 +6,7 @@
             "name": "Page View",
             "description": "When a new page load including SPA pages",
             "trigger":"On page load or history change for SPA",
-            "Required_Dimensions":["'page_url': <pageURL>","'page_title':<full page title>","marketihng_information"],
+            "Required_Dimensions":["'page_url': Full page URL","'page_title': Full page title","marketihng_information"],
             "dataLayer_exampl":"eret"
         },
         {
@@ -14,7 +14,7 @@
             "name": "Link Click",
             "description": "When generic links are clicked",
             "trigger":"OnClick of link of any type",
-            "Required_Dimensions":["'link_name': <link Name>","'link_position':<link Index>","'feature_name': <featureName>"],
+            "Required_Dimensions":["'link_name': link Name","'link_position': link Index","'feature_name': feature name"],
             "dataLayer_exampl":"efefrewret"
         }
     ]
