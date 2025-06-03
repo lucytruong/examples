@@ -42,8 +42,10 @@ const config = {
     docPath: '../../matomo/tracking/latest/docs',
     intro: '../src/intro.md',
 };
+const jsonlistitems = (json2md({link: {title:'page', source: '../../schemas/page/1_0_0.json'}}));
+const jsonlist = (json2md({h2: "here is a list of jsons"}));
 
-//const jsonlink = {json2md.link{title:'page', source: '../../schemas/page/1_0_0.json'}};
+    //const jsonlink = (json2md({link:{title:'page', source: '../../schemas/page/1_0_0.json'}}));
 
 
 const createLatestEventDictionary = () => {
@@ -55,7 +57,7 @@ const intro = readFileSync(config.intro, 'utf8');
 try {
     writeFileSync(
         config.docPath+'/readme.md',
-        heading + '\n' + intro + '\n' + eventlists,
+        heading + '\n' + intro + '\n' + eventlists + '\n' +jsonlist+'\n'+jsonlistitems,
         (error) => {
             throw new Error(error);
         },
