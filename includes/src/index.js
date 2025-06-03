@@ -36,13 +36,13 @@ function buildlists(item) {
     ])
 }
 
-
+//schemas/page/1_0_0.json
 
 const config = {
     docPath: '../../matomo/tracking/latest/docs',
     intro: '../src/intro.md',
 };
-const jsonlistitems = (json2md({link: {title:'page', source: '../../schemas/page_view/1_0_0.json'}}));
+const jsonlistitems = (json2md({link: {title:'page', source: 'https://github.com/lucytruong/examples/blob/main/schemas/page/1_0_0.json'}}));
 const jsonlist = (json2md({h2: "here is a list of jsons"}));
 
     //const jsonlink = (json2md({link:{title:'page', source: '../../schemas/page/1_0_0.json'}}));

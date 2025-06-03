@@ -46,4 +46,4 @@ These are the tracking requirements for link click
 
 ## here is a list of jsons
 
-[page](../../schemas/page_view/1_0_0.json)
+[page](https://github.com/lucytruong/examples/blob/main/schemas/page/1_0_0.json)
