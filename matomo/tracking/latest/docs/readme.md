@@ -13,7 +13,6 @@ Here you will find the events the business would like to capture and a breakdown
 * mtm or utm?
     * [mtm takes priority](https://matomo.org/faq/reports/how-to-build-campaign-tracking-urls/)
     * <a href="https://matomo.org/faq/reports/how-to-build-campaign-tracking-urls/">mtm takes priority</a>
-    * [Azure DDOS Protection Standard](https://learn.microsoft.com/en-us/azure/virtual-network/ddos-protection-overview)
 
 ## Tracked event: page view
 
@@ -43,7 +42,5 @@ These are the tracking requirements for link click
      2. 'link_position': link Index
      3. 'feature_name': feature name
     
-
-## here is a list of jsons
-
-[page](https://github.com/lucytruong/examples/blob/main/schemas/page/1_0_0.json)
+## Here is a list of jsons
+[page](https://github.com/lucytruong/examples/tree/main/schemas/page_view)
