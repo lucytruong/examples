@@ -1,4 +1,4 @@
-Last upated: 3-5-2025
+Last upated: 26-6-2025
 ## About Matomo analytics repo
 
 
@@ -13,8 +13,9 @@ Here you will find the events the business would like to capture and a breakdown
 * mtm or utm?
     * [mtm takes priority](https://matomo.org/faq/reports/how-to-build-campaign-tracking-urls/)
     * <a href="https://matomo.org/faq/reports/how-to-build-campaign-tracking-urls/">mtm takes priority</a>
+    * [Azure DDOS Protection Standard](https://learn.microsoft.com/en-us/azure/virtual-network/ddos-protection-overview)
 
-## Tracked event: page view
+# Tracked event: page view
 
 
 These are the tracking requirements for page view
@@ -28,7 +29,7 @@ These are the tracking requirements for page view
      2. 'page_title': Full page title
      3. marketihng_information
     
-## Tracked event: link click
+# Tracked event: link click
 
 
 These are the tracking requirements for link click
@@ -42,5 +43,7 @@ These are the tracking requirements for link click
      2. 'link_position': link Index
      3. 'feature_name': feature name
     
-## Here is a list of jsons
-[page](https://github.com/lucytruong/examples/tree/main/schemas/page_view)
+
+## here is a list of jsons
+
+[page](https://github.com/lucytruong/examples/tree/main/schemas/page/1_0_0.json)
