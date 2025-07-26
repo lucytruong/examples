@@ -1,0 +1,53 @@
+{
+    "schema" : "https://json-schema.org/draft/2020-12/schema",
+    "title" : "page_view",
+    "description" : "An example of the dataLayer push json string objec needed for page view",
+    "data" : {
+        "required": ["event","page_login_status","page_type","schema_version","page_name"],
+        "additionalProperties": true,
+        "type": "object",
+        "properties" : {
+            "schema_version" : {
+                "type" : "string",
+                "description" : "This version to enable business to align datalayer version or app update",
+                "minLength" : 8,
+                "pattern" : "^\\d{2}_\\d{2}_\\d{2}$"
+            },
+            "event" : {
+                "type" : "string",
+                "description" : "This would be page_view",
+                "enum": ["page_view"]
+            },
+            "page_name" : {
+                "type" : "string",
+                "description" : "Friendly value for the page",
+                "minLength": 3
+
+            },
+            "page_type" : {
+                "type" : "string",
+                "description" : "Page type ",
+                "enum": ["home","account","product","serach","info","other"]
+            },
+            "customer_id" : {
+                "type" : ["string","null"],
+                "description" : "The logged in user customer id"
+            },
+            "page_login_status" : {
+                "type" : "string",
+                "description" : "This login status of the user at time of event",
+                "enum" : ["logged","loggedout"]
+            }
+        },
+        "allOf" : [
+            {
+                "if" : {
+                    "properties" : {"page_login_status" : {"const" : "logged"}}
+                },
+                "then" : {
+                    "required" : ["customer_id"]
+                }
+            }
+        ]
+    }
+}
