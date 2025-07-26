@@ -25,7 +25,7 @@ function buildlists(item) {
         require_event_dim = generateReqDims(item.Required_Dimensions);
     }
     eventlists += json2md([
-        {h2: 'Tracked event: ' + item.event_name},
+        {h1: 'Tracked event: ' + item.event_name},
         {p: 'These are the tracking requirements for '+item.event_name},
         {
             ol: [
@@ -40,9 +40,10 @@ function buildlists(item) {
 
 const config = {
     docPath: '../../matomo/tracking/latest/docs',
+    docPathCopy: '../../matomo/tracking/copy/docs',
     intro: '../src/intro.md',
 };
-const jsonlistitems = (json2md({link: {title:'page', source: 'https://github.com/lucytruong/examples/blob/main/schemas/page/1_0_0.json'}}));
+const jsonlistitems = (json2md({link: {title:'page', source: 'https://github.com/lucytruong/examples/tree/main/schemas/page/1_0_0.json'}}));
 const jsonlist = (json2md({h2: "here is a list of jsons"}));
 
     //const jsonlink = (json2md({link:{title:'page', source: '../../schemas/page/1_0_0.json'}}));
@@ -57,6 +58,13 @@ const intro = readFileSync(config.intro, 'utf8');
 try {
     writeFileSync(
         config.docPath+'/readme.md',
+        heading + '\n' + intro + '\n' + eventlists + '\n' +jsonlist+'\n'+jsonlistitems,
+        (error) => {
+            throw new Error(error);
+        },
+    );
+    writeFileSync(
+        config.docPathCopy+'/readme_'+fdate+'.md',
         heading + '\n' + intro + '\n' + eventlists + '\n' +jsonlist+'\n'+jsonlistitems,
         (error) => {
             throw new Error(error);
