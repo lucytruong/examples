@@ -1,4 +1,4 @@
-## Lucy GTM snadbox
+## Lucy GTM sandbox
 To see what I have done simple inject this script into your browser via adswerve plugin
 
 ```
