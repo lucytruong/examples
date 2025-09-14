@@ -19,6 +19,7 @@
 ### 🛠️ Data Engineering
 - Technical lead on projects integrating multiple data sources into unified, high-value datasets.
 - Architected solutions that maximize data usability and business impact.
+**GCP:DataForm**, **Panda**, **MatplotLib**, **Bigquery**, **Git**, **CircleCI**, **GCP Data Engineer certification**
 
 ### 📅 Agile Project Delivery
 - Adept at working in **fast-paced Agile environments**.
