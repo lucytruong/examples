@@ -35,6 +35,7 @@
 
 ## Content
 1) ***data accuracy*** :Clear data structure using JSON schemas A [Schemas](https://github.com/lucytruong/examples/tree/main/schemas "Title")
+Included in here are schema examples with rules, the Node AJV validator code example for Validation at data collection and a Python validator that could be added to the data pipeline at time of ingestion.
 2) ***hyginene*** : Using JSON schema in unit testing or ETLs A [Schemas](https://github.com/lucytruong/examples/tree/main/schemas/readme.md "Title")
 3) Matomo A [Matomo](https://github.com/lucytruong/examples/tree/main/matomo "Title")
 4) GTM sandbox client please inject gtm locally to view what it does (more to be added) [GTM](https://github.com/lucytruong/examples/tree/main/GTM "Title")
