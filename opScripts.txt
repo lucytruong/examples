@@ -1,0 +1,91 @@
+var pathcheck = document.location.pathname.toLowerCase();
+var pathcheck2 = pathcheck.indexOf('/cat/beauty/') > 1 ? 'beauty_clp' : 'plp';
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+var checklink = document.querySelectorAll('div.c-carousel__items > div').length ? document.querySelectorAll('div.c-carousel__items > div').length : 0;
+
+if(checklink > 0){
+var promoclp = document.querySelectorAll('div.c-carousel__items > div').length;
+var promonumber = getRandomInt(promoclp);
+var querysel1 = "div.c-carousel__items > div:nth-child("+promonumber+") > div > a";
+document.querySelector(querysel1).click();
+}
+else{
+var listnumber = document.querySelectorAll('div.listing-items.c-listing-items.initialized > div').length;
+var listnumberclick = getRandomInt(listnumber);
+var queryselectstring = "div.listing-items.c-listing-items.initialized > div:nth-child("+listnumberclick+") > div > a";
+document.querySelector(queryselectstring).click();}
+
+///////////////////////////////////////////////////////////////////////////////////////
+document.querySelector('div > div.visible-in-header > ul > li.search.topLevel > form > input.searchInput').value="hoodies";
+//////////////////////////////////////////////
+
+document.querySelector('div.parametrizedhtml.component.section.default-style.reference-dynamic-navigationpanel > div > div.visible-in-header > ul > li.search.topLevel > a').click();
+
+///////////////////////////////////////////////////////////////////
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+var promoclp = document.querySelectorAll('div > section.c-filter-panel__filter.filter-panel-subcategory.filter-name-Refine.by.Category.initialized > div > div > ul > li').length;
+var promonumber = getRandomInt(promoclp);
+var querysel1 = "div > section.c-filter-panel__filter.filter-panel-subcategory.filter-name-Refine.by.Category.initialized > div > div > ul > li:nth-child("+promonumber+") > label";
+document.querySelector(querysel1).click();
+
+//document.querySelector('div > section.c-filter-panel__filter.filter-panel-subcategory.filter-name-Refine.by.Category.initialized > div > div > ul > li:nth-child(1) > label').click();
+
+///////////////////////////////////////////
+//BRANDS FILTER
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+var promoclp = document.querySelectorAll('div > section.c-filter-panel__filter.filter-panel-brand.filter-name-Refine.By.Brand.--compact.initialized > div > div.c-filter-panel__filter-list-wrapper > ul > li').length;
+var promonumber = getRandomInt(promoclp);
+var querysel1 = "div > section.c-filter-panel__filter.filter-panel-brand.filter-name-Refine.By.Brand.--compact.initialized > div > div.c-filter-panel__filter-list-wrapper > ul > li:nth-child("+promonumber+") > label";
+document.querySelector(querysel1).click();
+////////////////////////////
+
+// SELECT ITem
+var pathcheck = document.location.pathname.toLowerCase();
+var pathcheck2 = pathcheck.indexOf('/cat/beauty/') > 1 ? 'beauty_clp' : 'plp';
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+var checklink = document.querySelectorAll('div.c-carousel__items > div').length ? document.querySelectorAll('div.c-carousel__items > div').length : 0;
+
+if(checklink > 0){
+var promoclp = document.querySelectorAll('div.c-carousel__items > div').length;
+var promonumber = getRandomInt(promoclp);
+var querysel1 = "div.c-carousel__items > div:nth-child("+promonumber+") > div > a";
+document.querySelector(querysel1).click();
+}
+else{
+var listnumber = document.querySelectorAll('div.listing-items.c-listing-items.initialized > div').length;
+var listnumberclick = getRandomInt(listnumber);
+var queryselectstring = "div.listing-items.c-listing-items.initialized > div:nth-child("+listnumberclick+") > div > a";
+document.querySelector(queryselectstring).click();}
+/////////////////////////////////////////////////////////////////
+// SELECT size from drop down
+var checksize = document.querySelector('section.c-filter.single-colour-multi-size > div.c-select.c-filter__select.--size.--slide > div.c-select__dropdown-menu.--max-height > div.c-select__dropdown-item-container > span:nth-child(2)');
+
+if(!checksize)
+{
+ document.querySelector('section.c-filter.single-colour-multi-size > button').click();
+}
+else{document.querySelector('section.c-filter.single-colour-multi-size > div.c-select.c-filter__select.--size.--slide > div.c-select__dropdown-menu.--max-height > div.c-select__dropdown-item-container > span:nth-child(2)').click();};
+
+//////////////////////////////////////////////////////////////////////////
+
+document.querySelector('#logonId').value ="ecomoltest@gmail.com";
+
+document.querySelector('#logonPassword').value='3C0mmerce';
+
+
+
+
+
+
+

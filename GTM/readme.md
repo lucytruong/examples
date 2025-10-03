@@ -1,5 +1,5 @@
 ## Lucy GTM sandbox
-To see what I have done simple inject this script into your browser via adswerve plugin
+To see what I have done simply inject this script into your browser via adswerve plugin
 
 ```
 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
