@@ -26,7 +26,7 @@ json_str = '''
     "page_name" : "main_home",
     "page_type" : "home",
     "page_login_status" : "logged",
-    "schema_version" : "01_01_01"
+    "schema_version" : "1_01_01"
 }
      '''
 data =jsn.loads(json_str)
