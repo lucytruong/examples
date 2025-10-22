@@ -11,3 +11,5 @@ For tags that still need to load client side this solution offers:
 * The ability to also use a shortform version of the tag to load where GTM is being blocked
     * Being able to also have a shortern tag that still files without GTM (or any tag manager) enables the business to identify and measure the impact of missing tag managers.
 
+
+## This solution could be applied to any tags that need to executed front end.
