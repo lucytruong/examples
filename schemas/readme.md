@@ -22,4 +22,7 @@ By standardizing data validation across services, we improve reliability, analyt
 - Avoids silent analytics failures.
 - Improves observability, debugging, and data QA.
 
-***Test files*** : A [AJV_testFile](https://github.com/lucytruong/examples/tree/main/schemas/page_view/test.js "Title")
+***Test files*** :
+## The solution
+For access to the source validator using AJV and the Python Backend Dataset validator solution and see the code working please contact me for a demo.
+### Lucy Truong: Hoaanhl@hotmail.com
