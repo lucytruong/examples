@@ -13,3 +13,5 @@ For tags that still need to load client side this solution offers:
 
 
 ## This solution could be applied to any tags that need to executed front end.
+For access to the solution and see the code working please contact me for a demo.
+### Lucy Truong: Hoaanhl@hotmail.com
